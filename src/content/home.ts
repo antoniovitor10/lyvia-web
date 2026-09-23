@@ -49,13 +49,6 @@ export const steps = [
   },
 ];
 
-// TODO: substituir os placeholders por fotos reais de antes e depois.
-export const results = [
-  "Afinamento e rarefação capilar — evolução após acompanhamento.",
-  "Queda associada ao afinamento — recuperação progressiva da densidade.",
-  "Os resultados são individuais e podem variar de acordo com cada caso.",
-];
-
 // TODO: substituir por avaliações reais do Google.
 export const reviews = [
   "Inserir aqui uma avaliação real do Google que conte uma pequena história sobre atendimento, confiança e acompanhamento.",
