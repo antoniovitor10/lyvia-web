@@ -64,16 +64,16 @@ export const casos = [
     titulo: "Rarefação na região central",
     descricao:
       "Afinamento e perda de densidade no topo, com recuperação progressiva ao longo do acompanhamento.",
-    largura: 901,
-    altura: 1600,
+    largura: 820,
+    altura: 820,
   },
   {
     slug: "caso-02",
     titulo: "Alopecia androgenética",
     descricao:
       "Resultado após 11 meses de tratamento, com ganho de densidade na linha frontal e no topo.",
-    largura: 564,
-    altura: 445,
+    largura: 424,
+    altura: 340,
   },
   {
     slug: "caso-03",
@@ -81,6 +81,6 @@ export const casos = [
     descricao:
       "Falha circular no couro cabeludo com repovoamento dos fios ao longo do acompanhamento.",
     largura: 270,
-    altura: 406,
+    altura: 400,
   },
 ];
