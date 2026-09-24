@@ -14,7 +14,8 @@ export function BeforeAfter({ slug, titulo, largura, altura }: Props) {
   const areaRef = useRef<HTMLDivElement>(null);
   const [posicao, setPosicao] = useState(50);
   const [arrastando, setArrastando] = useState(false);
-  const [jaMexeu, setJaMexeu] = useState(false);
+  // Ref, e não estado: os timers da apresentação precisam ler o valor atual.
+  const mexeuRef = useRef(false);
 
   const mover = useCallback((clientX: number) => {
     const area = areaRef.current;
@@ -41,27 +42,37 @@ export function BeforeAfter({ slug, titulo, largura, altura }: Props) {
   // Apresenta o efeito uma vez, quando o bloco entra na tela.
   useEffect(() => {
     const area = areaRef.current;
-    if (!area || jaMexeu) return;
+    if (!area) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const timers: ReturnType<typeof setTimeout>[] = [];
 
     const observador = new IntersectionObserver(
       ([entrada]) => {
-        if (!entrada.isIntersecting) return;
+        if (!entrada.isIntersecting || mexeuRef.current) return;
         observador.disconnect();
         const quadros = [50, 62, 74, 82, 74, 60, 46, 34, 26, 34, 44, 50];
         quadros.forEach((valor, i) => {
-          setTimeout(() => setPosicao(valor), 220 + i * 130);
+          timers.push(
+            setTimeout(() => {
+              // Quem manda é o visitante: se ele já arrastou, a demo para.
+              if (!mexeuRef.current) setPosicao(valor);
+            }, 220 + i * 130),
+          );
         });
       },
       { threshold: 0.45 },
     );
 
     observador.observe(area);
-    return () => observador.disconnect();
-  }, [jaMexeu]);
+    return () => {
+      observador.disconnect();
+      timers.forEach(clearTimeout);
+    };
+  }, []);
 
   const aoPegar = (clientX: number) => {
-    setJaMexeu(true);
+    mexeuRef.current = true;
     setArrastando(true);
     mover(clientX);
   };
@@ -69,7 +80,7 @@ export function BeforeAfter({ slug, titulo, largura, altura }: Props) {
   const pelaTecla = (e: React.KeyboardEvent) => {
     if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
     e.preventDefault();
-    setJaMexeu(true);
+    mexeuRef.current = true;
     setPosicao((p) => Math.min(100, Math.max(0, p + (e.key === "ArrowLeft" ? -4 : 4))));
   };
 
