@@ -55,3 +55,16 @@ export const reviews = [
   "Inserir aqui uma avaliação real que fale sobre segurança durante o tratamento e evolução percebida.",
   "Inserir aqui uma avaliação real relacionada à experiência na clínica e ao atendimento.",
 ];
+
+// Cada caso espera dois arquivos em public/images:
+// `<slug>-antes.jpg` e `<slug>-depois.jpg`, no mesmo enquadramento.
+export const casos = [
+  {
+    slug: "caso-01",
+    titulo: "Rarefação na região central",
+    descricao:
+      "Afinamento e perda de densidade no topo, com recuperação progressiva ao longo do acompanhamento.",
+    largura: 901,
+    altura: 1600,
+  },
+];

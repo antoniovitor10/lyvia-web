@@ -11,9 +11,9 @@ export function Localizacao() {
           <div>
             <SectionHeading eyebrow="Vila Velha • Espírito Santo" title="Estamos na Praia da Costa." />
             <p className="lead">
-              R. Inácio Higino, 673 — Sala 410
+              R. Inácio Higino, 673, Sala 410
               <br />
-              Praia da Costa — Vila Velha — ES
+              Praia da Costa, Vila Velha, ES
             </p>
             <br />
             <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">

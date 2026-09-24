@@ -9,7 +9,7 @@ export function Tricologia() {
           <div className="pain-image" role="img" aria-label="Avaliação capilar" />
 
           <div>
-            <SectionHeading eyebrow="Tricologia" title="Seu cabelo mudou — e você percebeu." />
+            <SectionHeading eyebrow="Tricologia" title="Seu cabelo mudou e você percebeu." />
 
             <p className="lead">
               Mais fios no banho, diminuição do volume, couro cabeludo começando a aparecer,
