@@ -67,4 +67,20 @@ export const casos = [
     largura: 901,
     altura: 1600,
   },
+  {
+    slug: "caso-02",
+    titulo: "Alopecia androgenética",
+    descricao:
+      "Resultado após 11 meses de tratamento, com ganho de densidade na linha frontal e no topo.",
+    largura: 564,
+    altura: 445,
+  },
+  {
+    slug: "caso-03",
+    titulo: "Alopecia areata",
+    descricao:
+      "Falha circular no couro cabeludo com repovoamento dos fios ao longo do acompanhamento.",
+    largura: 270,
+    altura: 406,
+  },
 ];
