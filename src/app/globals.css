@@ -230,7 +230,7 @@ nav {
       rgba(216,199,179,0.2),
       rgba(216,199,179,0.2)
     ),
-    url("/images/hero.jpg");
+    url("/images/hero.webp");
 
   background-size: cover;
   background-position: center top;
@@ -253,7 +253,7 @@ section {
   min-height: 580px;
   border-radius: var(--radius);
   background:
-    url("/images/tricologia.jpg")
+    url("/images/tricologia.webp")
     center top / cover no-repeat;
 }
 
@@ -312,7 +312,7 @@ section {
   min-height: 620px;
   border-radius: var(--radius);
   background:
-    url("/images/lyvia.jpg")
+    url("/images/lyvia.webp")
     center top / cover no-repeat;
 }
 
@@ -521,7 +521,7 @@ section {
 .split-image {
   min-height: 550px;
   background:
-    url("/images/hair-spa.jpg")
+    url("/images/hair-spa.webp")
     center / cover no-repeat;
 }
 
@@ -551,7 +551,7 @@ section {
 .esthetic-image {
   min-height: 540px;
   background:
-    url("/images/estetica.jpg")
+    url("/images/estetica.webp")
     center / cover no-repeat;
 }
 
@@ -577,7 +577,7 @@ section {
   min-height: 520px;
   border-radius: 25px;
   background:
-    url("/images/clinica-recepcao.jpg")
+    url("/images/clinica-recepcao.webp")
     center / cover no-repeat;
 }
 
@@ -594,13 +594,13 @@ section {
 
 .clinic-office {
   background:
-    url("/images/clinica-consultorio.jpg")
+    url("/images/clinica-consultorio.webp")
     center / cover no-repeat;
 }
 
 .clinic-hairspa {
   background:
-    url("/images/hair-spa.jpg")
+    url("/images/hair-spa.webp")
     center / cover no-repeat;
 }
 
@@ -649,7 +649,7 @@ section {
   min-height: 400px;
   border-radius: 28px;
   background:
-    url("/images/predio.jpg")
+    url("/images/predio.webp")
     center / cover no-repeat;
 }
 
@@ -846,4 +846,103 @@ main[id] {
   .clinic-extra {
     grid-template-columns: 1fr;
   }
+}
+
+/* WHATSAPP FLUTUANTE */
+
+.wa-flutuante {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 200;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  min-height: 56px;
+  border-radius: 999px;
+  background: #1f9f5b;
+  color: white;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 14px 34px rgba(31, 159, 91, 0.35);
+}
+
+.wa-flutuante:hover {
+  background: #17854b;
+}
+
+@media (max-width: 560px) {
+  .wa-flutuante {
+    right: 12px;
+    bottom: 12px;
+    padding: 12px 18px;
+    font-size: 0.82rem;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+}
+
+/* AREA DE TOQUE DO COMPARADOR */
+
+.ba-alca {
+  width: 44px;
+  margin-left: -22px;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+
+.ba-alca::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 12px rgba(40, 35, 31, 0.35);
+}
+
+.ba-pino {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin: 0;
+}
+
+.footer-small a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+/* PAGINAS DE TEXTO */
+
+.pagina-texto {
+  padding: 70px 0 90px;
+}
+
+.pagina-texto h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  margin-bottom: 28px;
+}
+
+.pagina-texto h2 {
+  font-size: 1.4rem;
+  margin: 34px 0 10px;
+}
+
+.pagina-texto p {
+  color: var(--texto-suave);
+  max-width: 720px;
+}
+
+.pagina-texto a {
+  color: var(--dourado-escuro);
+  text-decoration: underline;
+}
+
+.voltar {
+  margin-top: 40px;
 }

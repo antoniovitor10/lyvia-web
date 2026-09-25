@@ -1,4 +1,5 @@
 import { navLinks } from "@/content/home";
+import { BotaoWhatsApp } from "./BotaoWhatsApp";
 import { LogoContent } from "./Logo";
 
 export function Header() {
@@ -18,9 +19,7 @@ export function Header() {
             ))}
           </div>
 
-          <a href="#contato" className="btn btn-primary">
-            Agendar avaliação
-          </a>
+          <BotaoWhatsApp origem="header">Agendar avaliação</BotaoWhatsApp>
         </nav>
       </div>
     </header>

@@ -19,17 +19,17 @@ export function Clinica() {
 
         <div className="clinic-extra">
           <div
-            style={{ backgroundImage: "url(/images/clinica-tricologia.jpg)" }}
+            style={{ backgroundImage: "url(/images/clinica-tricologia.webp)" }}
             role="img"
             aria-label="Sala de tricologia com lavatório e poltronas"
           />
           <div
-            style={{ backgroundImage: "url(/images/clinica-estetica.jpg)" }}
+            style={{ backgroundImage: "url(/images/clinica-estetica.webp)" }}
             role="img"
             aria-label="Sala de estética"
           />
           <div
-            style={{ backgroundImage: "url(/images/clinica-produtos.jpg)" }}
+            style={{ backgroundImage: "url(/images/clinica-produtos.webp)" }}
             role="img"
             aria-label="Bancada com produtos usados nos protocolos"
           />

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
+import { DadosEstruturados } from "@/components/DadosEstruturados";
+import { WhatsAppFlutuante } from "@/components/WhatsAppFlutuante";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -15,6 +18,7 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
   title,
   description,
   openGraph: {
@@ -22,14 +26,19 @@ export const metadata: Metadata = {
     description,
     locale: "pt_BR",
     type: "website",
-    images: ["/images/hero.jpg"],
+    images: ["/images/hero.webp"],
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={montserrat.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppFlutuante />
+        <DadosEstruturados />
+        <Analytics />
+      </body>
     </html>
   );
 }

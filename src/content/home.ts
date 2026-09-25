@@ -57,7 +57,7 @@ export const reviews = [
 ];
 
 // Cada caso espera dois arquivos em public/images:
-// `<slug>-antes.jpg` e `<slug>-depois.jpg`, no mesmo enquadramento.
+// `<slug>-antes.webp` e `<slug>-depois.webp`, no mesmo enquadramento.
 export const casos = [
   {
     slug: "caso-01",

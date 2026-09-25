@@ -1,4 +1,5 @@
 import { conditions } from "@/content/home";
+import { BotaoWhatsApp } from "../BotaoWhatsApp";
 import { SectionHeading } from "../SectionHeading";
 
 export function Tricologia() {
@@ -21,9 +22,7 @@ export function Tricologia() {
               primeiro passo é entender o seu caso.
             </p>
             <br />
-            <a href="#contato" className="btn btn-primary">
-              Quero avaliar meu cabelo
-            </a>
+            <BotaoWhatsApp origem="tricologia">Quero avaliar meu cabelo</BotaoWhatsApp>
           </div>
         </div>
 

@@ -1,3 +1,4 @@
+import { BotaoWhatsApp } from "../BotaoWhatsApp";
 import { SectionHeading } from "../SectionHeading";
 
 export function HairSpa() {
@@ -15,9 +16,7 @@ export function HairSpa() {
             </p>
             <br />
             <div>
-              <a href="#contato" className="btn btn-primary">
-                Conheça o Hair Spa
-              </a>
+              <BotaoWhatsApp origem="hairspa">Conheça o Hair Spa</BotaoWhatsApp>
             </div>
           </div>
         </div>

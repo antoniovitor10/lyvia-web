@@ -1,4 +1,4 @@
-import { whatsappUrl } from "@/lib/site";
+import { BotaoWhatsApp } from "../BotaoWhatsApp";
 import { SectionHeading } from "../SectionHeading";
 
 export function CtaFinal() {
@@ -13,9 +13,9 @@ export function CtaFinal() {
           Quanto antes entendemos o que está acontecendo, mais cedo podemos definir o cuidado
           adequado para aquele momento.
         </p>
-        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+        <BotaoWhatsApp origem="cta-final" variante="outline">
           Quero agendar minha avaliação
-        </a>
+        </BotaoWhatsApp>
       </div>
     </section>
   );

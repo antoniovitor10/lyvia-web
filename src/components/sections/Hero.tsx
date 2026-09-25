@@ -1,3 +1,5 @@
+import { BotaoWhatsApp } from "../BotaoWhatsApp";
+
 export function Hero() {
   return (
     <section className="hero">
@@ -23,9 +25,7 @@ export function Hero() {
             </p>
 
             <div className="hero-actions">
-              <a href="#contato" className="btn btn-primary">
-                Agendar avaliação
-              </a>
+              <BotaoWhatsApp origem="hero">Agendar avaliação</BotaoWhatsApp>
               <a href="#tricologia" className="btn btn-outline">
                 Conhecer os tratamentos
               </a>

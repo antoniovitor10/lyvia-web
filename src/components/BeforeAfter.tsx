@@ -91,7 +91,7 @@ export function BeforeAfter({ slug, titulo, largura, altura }: Props) {
       onPointerDown={(e) => aoPegar(e.clientX)}
     >
       <Image
-        src={`/images/${slug}-depois.jpg`}
+        src={`/images/${slug}-depois.webp`}
         alt={`${titulo}: depois do acompanhamento`}
         width={largura}
         height={altura}
@@ -101,7 +101,7 @@ export function BeforeAfter({ slug, titulo, largura, altura }: Props) {
 
       <div className="ba-antes" style={{ clipPath: `inset(0 ${100 - posicao}% 0 0)` }}>
         <Image
-          src={`/images/${slug}-antes.jpg`}
+          src={`/images/${slug}-antes.webp`}
           alt={`${titulo}: antes do acompanhamento`}
           width={largura}
           height={altura}
