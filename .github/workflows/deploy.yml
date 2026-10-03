@@ -18,7 +18,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - run: npm run build -- --webpack
         env:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           NEXT_PUBLIC_TINTIM_URL: ${{ secrets.NEXT_PUBLIC_TINTIM_URL }}
