@@ -7,7 +7,7 @@ export function Tricologia() {
     <section id="tricologia">
       <div className="container">
         <div className="pain-grid">
-          <div className="pain-image" role="img" aria-label="Avaliação capilar" />
+          <div className="pain-image" role="img" aria-label="Consulta capilar" />
 
           <div>
             <SectionHeading eyebrow="Tricologia" title="Seu cabelo mudou e você percebeu." />
@@ -22,7 +22,7 @@ export function Tricologia() {
               primeiro passo é entender o seu caso.
             </p>
             <br />
-            <BotaoWhatsApp origem="tricologia">Quero avaliar meu cabelo</BotaoWhatsApp>
+            <BotaoWhatsApp origem="tricologia">Agendar Consulta</BotaoWhatsApp>
           </div>
         </div>
 

@@ -19,7 +19,7 @@ export function Header() {
             ))}
           </div>
 
-          <BotaoWhatsApp origem="header">Agendar avaliação</BotaoWhatsApp>
+          <BotaoWhatsApp origem="header">Agendar Consulta</BotaoWhatsApp>
         </nav>
       </div>
     </header>

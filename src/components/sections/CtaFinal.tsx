@@ -6,7 +6,7 @@ export function CtaFinal() {
     <section className="final-cta" id="contato">
       <div className="container">
         <SectionHeading
-          eyebrow="Agende sua avaliação"
+          eyebrow="Agendar Consulta"
           title="Percebeu que seu cabelo não está mais como antes?"
         />
         <p>
@@ -14,7 +14,7 @@ export function CtaFinal() {
           adequado para aquele momento.
         </p>
         <BotaoWhatsApp origem="cta-final" variante="outline">
-          Quero agendar minha avaliação
+          Agendar Consulta
         </BotaoWhatsApp>
       </div>
     </section>

@@ -15,17 +15,17 @@ export function Hero() {
 
             <p>
               <strong>
-                Cuidar do cabelo começa por compreender o que está acontecendo com ele.
+                Buscando a melhor tricologista da Região de Vila Velha e Vitória?
               </strong>
             </p>
 
             <p>
-              Tratamentos para queda capilar, afinamento e saúde do couro cabeludo, com
-              avaliação individualizada e acompanhamento ao longo do processo.
+              Aqui você encontra cuidado e tecnologia em tratamentos capilares, alopecia e
+              queda de cabelo. Agende uma consulta e tenha acompanhamento personalizado.
             </p>
 
             <div className="hero-actions">
-              <BotaoWhatsApp origem="hero">Agendar avaliação</BotaoWhatsApp>
+              <BotaoWhatsApp origem="hero">Agendar Consulta</BotaoWhatsApp>
               <a href="#tricologia" className="btn btn-outline">
                 Conhecer os tratamentos
               </a>

@@ -6,7 +6,7 @@ export function ComoFunciona() {
     <section>
       <div className="container">
         <SectionHeading eyebrow="Jornada de cuidado" title="Como funciona" />
-        <p className="lead">Um caminho claro, da avaliação ao acompanhamento da evolução.</p>
+        <p className="lead">Um caminho claro, da consulta ao acompanhamento da evolução.</p>
 
         <div className="steps">
           {steps.map((step, i) => (

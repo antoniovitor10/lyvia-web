@@ -12,16 +12,24 @@ export function Sobre() {
 
             <div className="professional-title">
               Biomédica Esteta | Especialista em Tricologia
+              <span className="block">CRBM 10.311 ES</span>
             </div>
 
             <p className="lead">
-              Minha atuação é voltada principalmente ao cuidado de pessoas que convivem com
-              queda, afinamento e alterações capilares.
+              Há 8 anos atuando na Tricologia, Lyvia Pinheiro está entre as profissionais que
+              ajudaram a consolidar essa área em Vila Velha, construindo uma trajetória dedicada
+              principalmente ao cuidado de pessoas que convivem com queda de cabelo, calvície,
+              afinamento e outras alterações capilares.
             </p>
             <br />
             <p className="lead">
-              Cada caso começa com uma avaliação individual, porque a história daquele cabelo
-              é parte fundamental para compreender por que ele chegou até ali.
+              A experiência adquirida ao longo desses anos e o acompanhamento de diferentes
+              casos desenvolveram um olhar cada vez mais individualizado sobre cada pessoa e
+              cada etapa do processo.
+            </p>
+            <br />
+            <p className="lead">
+              Por isso, acredito que um bom acompanhamento começa antes de qualquer procedimento.
             </p>
 
             <div className="quote">

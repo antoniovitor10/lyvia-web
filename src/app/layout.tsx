@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import { Analytics } from "@/components/Analytics";
+import { Analytics, AnalyticsFallback } from "@/components/Analytics";
 import { DadosEstruturados } from "@/components/DadosEstruturados";
 import { WhatsAppFlutuante } from "@/components/WhatsAppFlutuante";
 import { siteUrl } from "@/lib/site";
@@ -34,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={montserrat.variable}>
       <body>
+        <AnalyticsFallback />
         {children}
         <WhatsAppFlutuante />
         <DadosEstruturados />

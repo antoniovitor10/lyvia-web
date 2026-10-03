@@ -8,7 +8,7 @@ const dados = {
   "@type": "MedicalClinic",
   name: "Clínica Lyvia Pinheiro",
   description:
-    "Clínica de tricologia e estética em Vila Velha (ES). Avaliação e acompanhamento para queda capilar, afinamento e saúde do couro cabeludo.",
+    "Clínica de tricologia e estética em Vila Velha (ES). Consulta e acompanhamento para queda capilar, afinamento e saúde do couro cabeludo.",
   url: siteUrl,
   image: `${siteUrl}/images/clinica-recepcao.webp`,
   telephone: `+${whatsappNumber}`,

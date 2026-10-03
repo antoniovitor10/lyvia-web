@@ -10,7 +10,7 @@ export const navLinks = [
 export const conditions = [
   {
     title: "Queda capilar",
-    text: "Avaliação do contexto e planejamento individualizado para cada caso.",
+    text: "Análise do contexto e planejamento individualizado para cada caso.",
   },
   {
     title: "Afinamento e perda de densidade",
@@ -32,7 +32,7 @@ export const conditions = [
 
 export const steps = [
   {
-    title: "Avaliação",
+    title: "Consulta",
     text: "Conversamos sobre seu histórico, rotina e mudanças percebidas no cabelo.",
   },
   {
@@ -41,7 +41,7 @@ export const steps = [
   },
   {
     title: "Planejamento individualizado",
-    text: "A partir da avaliação, são definidas possibilidades de cuidado e acompanhamento.",
+    text: "A partir da consulta, são definidas possibilidades de cuidado e acompanhamento.",
   },
   {
     title: "Acompanhamento",

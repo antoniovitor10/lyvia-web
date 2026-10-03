@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Tracking de Lyvia
+
+O build usa por padrão os dados enviados por Chico em 30/09/2026: Meta Pixel
+`553740172574489`, Google Tag Manager `GTM-K84G82RH` e o link Tintim registrado
+em `.env.example`. Todos os botões de contato, inclusive rodapé, botão flutuante
+e página de privacidade, usam esse destino.
+
+As variáveis `NEXT_PUBLIC_META_PIXEL_ID`, `NEXT_PUBLIC_GTM_ID` e
+`NEXT_PUBLIC_TINTIM_URL` podem substituir esses valores no build. A variável antiga
+`NEXT_PUBLIC_WHATSAPP_URL` foi substituída por `NEXT_PUBLIC_TINTIM_URL`, para evitar
+que um link antigo de WhatsApp contorne o tracking. O workflow de deploy já repassa
+as novas variáveis; secrets vazios usam os valores padrão do código.
+
+Os scripts carregam após a hidratação. Um clique em contato registra a origem no
+evento `contato_whatsapp` do Google e no evento `Contact` da Meta. O GTM e o Pixel
+também têm fallback para navegadores sem JavaScript. Google Analytics direto
+permanece opcional em `NEXT_PUBLIC_GA_ID`; se o container GTM já instala GA ou Meta,
+conferir suas tags para evitar uma segunda instalação do mesmo tracking.
+
 ## Getting Started
 
 First, run the development server:
