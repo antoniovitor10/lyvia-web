@@ -1,3 +1,4 @@
+import { BotaoWhatsApp } from "../BotaoWhatsApp";
 import { SectionHeading } from "../SectionHeading";
 
 export function Estetica() {
@@ -17,9 +18,9 @@ export function Estetica() {
             </p>
             <br />
             <div>
-              <a href="#contato" className="btn btn-outline">
+              <BotaoWhatsApp origem="estetica" variante="outline">
                 Conhecer os tratamentos
-              </a>
+              </BotaoWhatsApp>
             </div>
           </div>
 

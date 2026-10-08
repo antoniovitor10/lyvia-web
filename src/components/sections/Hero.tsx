@@ -26,9 +26,9 @@ export function Hero() {
 
             <div className="hero-actions">
               <BotaoWhatsApp origem="hero">Agendar Consulta</BotaoWhatsApp>
-              <a href="#tricologia" className="btn btn-outline">
+              <BotaoWhatsApp origem="hero-tratamentos" variante="outline">
                 Conhecer os tratamentos
-              </a>
+              </BotaoWhatsApp>
             </div>
           </div>
 
